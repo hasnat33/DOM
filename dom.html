@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explor Dom</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .special h3{
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nam, doloremque distinctio et, commodi esse ipsum quis provident possimus dolores fugit! Dolor libero est sequi ex deserunt aperiam quod laborum.</p>
+            </article>
+            <article class="special">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Necessitatibus cumque mollitia, veniam quis qui voluptatum nostrum repudiandae, architecto, iste consectetur tempora pariatur. Praesentium corporis mollitia molestiae vero officiis quisquam vitae veritatis iusto assumenda! Aspernatur illum quam laudantium voluptas?</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">A cum quas iure, facilis expedita sunt suscipit harum? Est reprehenderit asperiores autem laboriosam laborum ut fuga dolorum alias mollitia dignissimos architecto facilis cupiditate, deleniti qui quidem illo iste molestias!</p>
+            </article>
+     </section>
+        <section>
+            <h3>Exploring DOM</h3>
+            <p id="first">My first paragraph.</p>
+            <p>This is the second paragraph.</p>
+        </section>
+        <section>
+            <h3>Exploring DOM</h3>
+            <p id="first">My first paragraph.</p>
+            <p>This is the second paragraph.</p>
+        </section>
+    </main>
+    <script>
+        document.body.style.backgroundColor = 'tomato';
+        var authors = document.querySelectorAll('.special h3');
+        for( var i = 0; i < authors.length; i++)
+        var element = authors[i];
+        //console.log(element.innerHTML);
+        element.style.backgroundColor = 'lightblue';
+        element.style.margin = '10px'; 
+
+
+       // DOM ==> Document Object Model
+    </script>
+</body>
+</html>
